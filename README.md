@@ -1,5 +1,12 @@
 # esp-12_tft4.0
 
+## important
+1. it needs modify 'HEFENG_KEY' in 'sw/esp-tft4.0/esp-tft4.0.ino' file.
+2. update 'data' folder date in aruino ide.
+3. download below 'libs' into 'Arduino/libraries' folder.
+4. use 'sw/tft_espi_setup/User_Setup.h' file replace TFT_eSPI folder file.
+
+
 ## hardware
 ### bom
 | No. | Name | Description
