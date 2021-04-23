@@ -33,7 +33,7 @@ GfxUi ui = GfxUi(&tft);
 #define DST_MN          0      // use 60mn for summer time in some countries
 
 // hefeng weather config
-const char* HEFENG_KEY="xxxxxxxxxxxxxx";
+const char* HEFENG_KEY="xxxxxxxxxxxxxxxx";
 const char* HEFENG_LOCATION="101010100";  // https://dev.qweather.com/docs/start/location-list/
 
 // weather update config
@@ -42,6 +42,9 @@ const int UPDATE_INTERVAL_SECS = 20 * 60; // Update every 20 minutes  online wea
 // week and month config
 const String WDAY_NAMES[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 const String MONTH_NAMES[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+
+// display update
+const int DISPLAY_UPDATE = 8000; // 8000 = 8s
 
 // SETUP END
 // SETUP END
@@ -423,5 +426,7 @@ void loop() {
         // DISPLAY 3 DAYS WEATHER
         drawForecast();
     }
+
+    delay(DISPLAY_UPDATE);
 
 }
