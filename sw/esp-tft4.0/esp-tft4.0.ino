@@ -24,17 +24,28 @@ TFT_eSPI tft = TFT_eSPI();   // tft instance
 
 GfxUi ui = GfxUi(&tft);
 
+// SETUP BEGIN
+// SETUP BEGIN
+// SETUP BEGIN
 
 // timezone config
 #define TZ              +8       // (utc+) TZ in hours
 #define DST_MN          0      // use 60mn for summer time in some countries
 
-// Setup 
-// weather update
+// hefeng weather config
+const char* HEFENG_KEY="xxxxxxxxxxxxxx";
+const char* HEFENG_LOCATION="101010100";  // https://dev.qweather.com/docs/start/location-list/
+
+// weather update config
 const int UPDATE_INTERVAL_SECS = 20 * 60; // Update every 20 minutes  online weather
 
+// week and month config
 const String WDAY_NAMES[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 const String MONTH_NAMES[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+
+// SETUP END
+// SETUP END
+// SETUP END
 
 HeFengCurrentData currentWeather;
 HeFengForeData foreWeather[3];
@@ -43,10 +54,6 @@ HeFeng HeFengClient;
 #define TZ_MN           ((TZ)*60)
 #define TZ_SEC          ((TZ)*3600)
 #define DST_SEC         ((DST_MN)*60)
-
-// hefeng weather config
-const char* HEFENG_KEY="xxxxxxxxxxxxxxxxxxxxx";
-const char* HEFENG_LOCATION="101010100";
 
 time_t now;
 
@@ -365,9 +372,7 @@ void setup() {
 
     Serial.begin(115200);
     Serial.println();
-
-    pinMode(button_wifi, INPUT); // 按钮输入
-  
+ 
     tft.init();
     tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
@@ -418,6 +423,5 @@ void loop() {
         // DISPLAY 3 DAYS WEATHER
         drawForecast();
     }
-
 
 }
