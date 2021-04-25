@@ -1,5 +1,9 @@
 # esp-12_tft4.0
 
+![](./pic/display.jpg) 
+![](./pic/bottom.jpg) 
+![](./pic/side.jpg) 
+
 ## important
 1. it needs modify 'HEFENG_KEY' in 'sw/esp-tft4.0/esp-tft4.0.ino' file.
 2. update 'data' folder date in aruino ide.
