@@ -49,3 +49,12 @@
 | :---: | :---: | :--- |:--- |:--- |
 |1    | wifimanager | 8c3d0dc | https://github.com/bibo19842003/WiFiManager.git | |
 |2    | TFT_eSPI | 5b78211 | https://github.com/bibo19842003/TFT_eSPI.git | |
+
+## Thanks
+| No. | Name | link | remark
+| :---: | :---: | :--- | :--- |
+|1    | WiFiManager | https://github.com/tzapu/WiFiManager | |
+|2    | TFT_eSPI | https://github.com/Bodmer/TFT_eSPI | |
+|3    | Esp8266_NTP_Clock_Weather | https://github.com/yuan910715/Esp8266_NTP_Clock_Weather | |
+|4    | https://www.jianshu.com/p/c08e02d83895 | https://www.jianshu.com/p/c08e02d83895 | |
+|5    | nodemcu-devkit-v1.0 | https://github.com/nodemcu/nodemcu-devkit-v1.0 | |
