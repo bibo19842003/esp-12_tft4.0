@@ -8,8 +8,6 @@
 1. it needs modify 'HEFENG_KEY' in 'sw/esp-tft4.0/esp-tft4.0.ino' file.
 2. update 'data' folder date in aruino ide.
 3. download below 'libs' into 'Arduino/libraries' folder.
-4. use 'sw/tft_espi_setup/User_Setup.h' file replace TFT_eSPI folder file.
-
 
 ## hardware
 ### bom
@@ -17,6 +15,7 @@
 | :---: | :---: | :--- |
 |1    | esp-12e | |
 |2    | st7796s | 320 x 480 |
+|3    | pcb board | working |
 
 ### connect
 | No. | st7796s | esp-12e
