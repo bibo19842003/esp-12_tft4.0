@@ -48,4 +48,4 @@
 | No. | Name | Ver | link | remark
 | :---: | :---: | :--- |:--- |:--- |
 |1    | wifimanager | 8c3d0dc | https://github.com/bibo19842003/WiFiManager.git | |
-|2    | TFT_eSPI | f33674c | https://github.com/Bodmer/TFT_eSPI.git | setup file: sw/tft_espi_setup/User_Setup.h |
+|2    | TFT_eSPI | 5b78211 | https://github.com/bibo19842003/TFT_eSPI.git | |
